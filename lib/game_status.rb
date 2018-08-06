@@ -58,7 +58,7 @@ end
 
 #winner
 def winner(board)
-  if won?(board) && position_1 == "X" && position_2 == "X" && position_3 == "X"
-    "X"
+  won?(board).each do |win_combination|
+    win_combination.detect{|i| i == "X"}
   end
 end
