@@ -15,6 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6] # Right diagonals
 ]
 
+#won?
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
@@ -36,8 +37,15 @@ def won?(board)
   false
 end
 
+#full?
 def full?(board)
   board.all? do |i|
     i != " "
   end
+end
+
+#draw?
+def draw?(board)
+  if !won?(board) && full?(board)
+    true
 end
