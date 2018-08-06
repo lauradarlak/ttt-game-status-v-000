@@ -55,3 +55,8 @@ end
 def over?(board)
   won?(board) || draw?(board) || full?(board) ? true : false
 end
+
+#winner
+def winner(board)
+  
+end
