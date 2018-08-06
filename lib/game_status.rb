@@ -63,6 +63,7 @@ def winner(board)
     board[win_combination[1]] == "X" &&
     board[win_combination[2]] == "X"
       return "X"
+    else return "O"
     end
   end
 end
