@@ -50,3 +50,8 @@ def draw?(board)
     true
   end
 end
+
+#over?
+def over?(board)
+  if !won?(board) && full?(board) && draw?(board)
+end
