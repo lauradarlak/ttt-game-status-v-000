@@ -58,9 +58,7 @@ end
 
 #winner
 def winner(board)
-  if won?(board)
-    board.detect{|i| i == "X"}
+  if won?(board) && position_1 == "X" && position_2 == "X" && position_3 == "X"
     "X"
-  else "O"
   end
 end
