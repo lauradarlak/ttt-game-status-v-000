@@ -59,6 +59,9 @@ end
 #winner
 def winner(board)
   won?(board).each do |win_combination|
-    win_combination.detect{|i| i == "X"}
+    if win_combination.detect{|i| i == "X"}
+      "X"
+    else "O"
+    end
   end
 end
