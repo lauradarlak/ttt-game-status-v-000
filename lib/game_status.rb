@@ -45,7 +45,7 @@ def full?(board)
 end
 
 #draw?
-def draw?(board)
+def draw?(board)da
   if !won?(board) && full?(board)
     true
   end
