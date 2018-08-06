@@ -58,10 +58,8 @@ end
 
 #winner
 def winner(board)
-  if won?(board).all? do |i|
-    i == "X"
-    end
-  "X"
+  if win?(board).all?{|i| i == "X"}
+    "X"
+  else "O"
   end
-else "O"
 end
