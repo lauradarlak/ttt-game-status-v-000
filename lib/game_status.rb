@@ -59,4 +59,5 @@ end
 #winner
 def winner(board)
   won?(board).detect{|token| token = "X"}
+  "X"
 end
