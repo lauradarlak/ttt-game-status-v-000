@@ -58,8 +58,10 @@ end
 
 #winner
 def winner(board)
-  won?(board).detect{|token| token = "X"}
+  if won?(board).all? do |i|
+    i == "X"
+    end
   "X"
-  won?(board).detect{|token| token = "O"}
-  "O"
+  end
+else "O"
 end
