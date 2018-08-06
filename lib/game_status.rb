@@ -58,7 +58,7 @@ end
 
 #winner
 def winner(board)
-  if win?(board).all?{|i| i == "X"}
+  if won?(board).all?{|i| i == "X"}
     "X"
   else "O"
   end
