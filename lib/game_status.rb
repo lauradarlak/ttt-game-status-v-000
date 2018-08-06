@@ -58,16 +58,13 @@ end
 
 #winner
 def winner(board)
-  won?(board).each do |win_combination|
+  if won?(board).each do |win_combination|
     if board[win_combination[0]] == "X" &&
     board[win_combination[1]] == "X" &&
     board[win_combination[2]] == "X"
       return "X"
-    elsif board[win_combination[0]] == "O" &&
-    board[win_combination[1]] == "O" &&
-    board[win_combination[2]] == "O"
-      return "O"
-    else return nil
+    else return "O"
     end
   end
+  nil
 end
