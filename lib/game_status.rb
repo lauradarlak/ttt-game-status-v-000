@@ -60,7 +60,7 @@ end
 def winner(board)
   if won?(board).detect{|token| token != "O"}
     "X"
-  else 
+  else
     return "O"
   end
 end
