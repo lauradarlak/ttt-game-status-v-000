@@ -48,5 +48,6 @@ end
 def draw?(board)da
   if !won?(board) && full?(board)
     true
+  else false
   end
 end
